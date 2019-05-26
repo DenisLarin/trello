@@ -9,7 +9,7 @@ function TaskAddNew(props) {
             <textarea rows="5" value={props.value} onChange={props.onChange}/>
             <div className={styles.wrapper}>
                 <IconButton onclick={props.closeHandler} />
-                <Button content="Добавить карточку" onclick={props.sendnewItemHandler}/>
+                <Button content={props.content} onclick={props.onClick}/>
             </div>
         </div>
     );
