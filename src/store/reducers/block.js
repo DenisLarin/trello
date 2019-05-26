@@ -2,9 +2,9 @@ import * as actionTypes from './../actions/ActionTypes';
 import updatedObject from '../../shared/updateObject';
 
 const initState = {
-    colums: [
+    taskBlocks: [
         {
-            columnItem: 'Планы на месяц',
+            blockItem: 'Планы на месяц',
             cards: [
                 'Пройти курс по React',
                 'Отметить день рождения',
@@ -17,7 +17,7 @@ const initState = {
             ]
         },
         {
-            columnItem: 'План на день',
+            blockItem: 'План на день',
             cards: [
                 'Пройти курс по React',
                 'Забронировать тир на субботу',
@@ -39,7 +39,7 @@ const deleteColumn = (state, action)=>{
 
 };
 
-const reducer = (state, action)=>{
+const reducer = (state = initState, action)=>{
   switch (action.type) {
       case actionTypes.ADD_NEW_CARD: return addNewCard(state, action);
       case actionTypes.ADD_NEW_COLUMN: return addNewColumn(state, action);

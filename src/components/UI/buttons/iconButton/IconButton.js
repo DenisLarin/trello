@@ -9,7 +9,7 @@ function IconButton(props) {
         img = addSVG;
 
     return (
-        <button className={style.iconButton}><img src={img}/></button>
+        <button onClick={props.onclick} className={style.iconButton}><img src={img}/></button>
     );
 }
 

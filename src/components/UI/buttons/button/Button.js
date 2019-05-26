@@ -12,7 +12,7 @@ function Button(props) {
         </div>
     }
     return (
-        <button className={classes.join(' ')}>{content}</button>
+        <button onClick={props.onclick} className={classes.join(' ')}>{content}</button>
     );
 }
 

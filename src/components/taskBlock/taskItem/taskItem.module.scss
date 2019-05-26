@@ -1,4 +1,4 @@
-.taskItem{
+.taskItem {
   width: 100%;
   height: auto;
   background: #FFFFFF;
@@ -6,4 +6,9 @@
   border-radius: 3px;
   padding: 10px 5px;
   position: relative;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
